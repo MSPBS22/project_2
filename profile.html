@@ -8,42 +8,62 @@
 </head>
 <body>
 <header class="top-bar" style="position:fixed;top:0;left:0;right:0;height:64px;background:linear-gradient(90deg,#6a1b9a,#8e24aa);box-shadow:0 2px 6px rgba(0,0,0,0.2);z-index:1000;display:flex;align-items:center;padding:0 16px;color:#fff;font-weight:600;">
-    <div class="brand">J*bFindeR</div>
+    <div class="brand" style="font-size:2.5rem;">J*bFindeR</div>
+    <a href="index.html" style="position:absolute;top:0px;right:16px;">
+        <img src="images/home.png" alt="Home" style="width:64px;height:64px;">
+    </a>
 </header>
 
 <main style="margin-top:64px;padding:16px;">
     <style>
     .profile-grid {
         display: flex;
-        flex-direction: column; /* stack boxes vertically */
-        align-items: center;    /* center them horizontally */
+        flex-direction: column;
+        align-items: center;
         justify-content: flex-start;
-        gap: 16px;
-        padding-top: 8px; /* keeps them near the top */
+        gap: 24px;
+        padding-top: 8px;
         width: 100%;
     }
     .profile-box {
         border: 2px solid #1976d2;
-        border-radius: 8px;
-        padding: 16px;
+        border-radius: 12px;
+        padding: 32px;
         width: 100%;
-        max-width: 480px; /* constrains box width and centers it via .profile-grid */
+        max-width: 700px;
         background: #fff;
-        box-shadow: 0 1px 3px rgba(25,118,210,0.06);
+        box-shadow: 0 2px 6px rgba(25,118,210,0.10);
+        position: relative;
+        font-size: 1.25rem;
+    }
+    .icon-top {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 32px;
+        height: 32px;
+    }
+    .icon-bottom {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        width: 32px;
+        height: 32px;
     }
     .profile-box h2 {
-        margin: 0 0 8px;
+        margin: 0 0 16px;
         color: #0d47a1;
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
     .profile-box ul {
         margin: 0;
-        padding-left: 20px;
+        padding-left: 28px;
     }
     </style>
 
     <div class="profile-grid">
         <section class="profile-box" aria-labelledby="skills-title">
+            <img src="images/collapse.png" alt="Collapse Icon" class="icon-top">
             <h2 id="skills-title">Skills</h2>
             <ul>
                 <li>HTML</li>
@@ -51,9 +71,11 @@
                 <li>JavaScript</li>
                 <li>Responsive design</li>
             </ul>
+            <img src="images/plus.png" alt="Plus Icon" class="icon-bottom">
         </section>
 
         <section class="profile-box" aria-labelledby="jobs-title">
+            <img src="images/collapse.png" alt="Collapse Icon" class="icon-top">
             <h2 id="jobs-title">Job Interests</h2>
             <ul>
                 <li>Frontend Developer</li>
@@ -61,8 +83,36 @@
                 <li>Web Accessibility</li>
                 <li>Remote opportunities</li>
             </ul>
+            <img src="images/plus.png" alt="Plus Icon" class="icon-bottom">
         </section>
     </div>
+    <div style="position:absolute;top:150px;left:100px;">
+        <img src="images/profile.png" alt="Profile Image" style="width:500px;height:auto;border-radius:50%;">
+    </div>
+    <div style="position:absolute;top:650px;left:180px;">
+    <h2> Edit Personal Information</h2>
+    <div style="position:absolute;top:22px;left:300px">
+        <img src="images/edit.png" alt="Edit Icon" style="width:30px;height:auto;">
+    </div>
+    <ul>
+        <li>John Johnington Jr</li>
+        <li>4/20/2005</li>
+        <li>Unemployed</li>
+        <li>3rd Year University Student</li>
+    </ul>
+</div>
+<div style="position:fixed;top:80px;right:32px;z-index:1001;">
+    <h2 style="text-decoration:underline;margin:0;font-size:3rem;">Submitted Applications</h2>
+    <h2>Company Inc. / Programmer</h2>
+    <h2>STATUS: <span style="color:rgb(255, 196, 0);">Pending</span></h2>
+    &nbsp;
+    <h2>Job Corp / Data Intern</h2>
+    <h2>STATUS: <span style="color:rgb(255, 0, 0);">Rejected</span></h2>
+    &nbsp;
+    <h2>Solute Solutions / Research Intern</h2>
+    <h2>STATUS: <span style="color:rgb(0, 184, 40);">Accepted</span></h2>
+    <h2><span style="color:rgb(255, 196, 0);">Further Action Needed</span></h2>
+</div>
 </main>
 </body>
 </html>
